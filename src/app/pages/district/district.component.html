@@ -1,0 +1,26 @@
+<!-- service file for data adding -->
+<!-- add getData fun to service page -->
+<!-- import district file -->
+<!-- add constructor to  -->
+<!--import Router from andular and NavigateUrl -->
+<!-- filter -->
+<div class="container text-center pt-4 pb-4">
+    <div class="row text-center justify-content-between" >
+            <div class="col-lg-4 pt-2" *ngFor="let data of district">
+            <div class="card" (click)="gotoPage(data.name)">
+                <img
+                src="{{data.img}}"
+                class="card-img-top"
+                alt="..."
+                />
+                <div class="card-body">
+                <h5 class="card-title">{{data.name}}</h5>
+                <p class="card-text">
+                    {{data.description}}
+                </p>
+                <a routerLink="single" class="btn btn-primary">See More</a>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>

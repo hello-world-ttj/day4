@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+
+.carousel-item img {
+    height: 550px;
+    width: auto;
+}
+
+.about{
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.card, .card1{
+    width: 18rem;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+.map{
+    width: 600px;
+    height: 450px;
+    border: 1px solid #7a7a7a;
+}
+
+.flexDiv{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: auto;
+    }
+
+    .card1Div{
+        margin-right: 200px;
+    }
+
+    .map{
+        width: 350px;
+        height: 250px;
+        border: 1px solid #7a7a7a;
+        margin-top: 10px;
+    }
+  }
+
+  
