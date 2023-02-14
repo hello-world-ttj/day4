@@ -9,7 +9,7 @@
         <p class="h4">{{single[0].about ? single[0].about : "Data will added later..."}}</p>
       </div>
       <div class="col col-lg-4">
-        <iframe [src]="single[0].map | safe" width="auto" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe [src]="single[0].map | safeUrl" width="auto" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     </div>
